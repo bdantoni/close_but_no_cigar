@@ -32,5 +32,10 @@ class Empty_array < Minitest::Test
 		assert_equal(true,array_1_number_off(winning_ticket,losing_ticket))
 	end
 
+	def test_off_1_arrays
+		winning_ticket2 = ["1234","3452","7483"]
+	 	losing_ticket2 = "1237"
+		assert_equal(true,array_3_strings(winning_ticket2,losing_ticket2))
+	end
 
 end
