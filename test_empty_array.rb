@@ -88,7 +88,6 @@ def array_1_number_off(winning_ticket,losing_ticket)
  	# winning_ticket =["5679"]
  	# losing_ticket ="5671"
 
- 	num = []
  	counter = 0
  	if losing_ticket[0]==winning_ticket[0]
  	counter +=1	
@@ -106,39 +105,65 @@ def array_1_number_off(winning_ticket,losing_ticket)
 	counter +=1		
 	end
 
-	if counter == 3
-		true
+	counter == 3
+
+end
+
+def winning_array(winning_ticket2,losing_ticket2)
+	array = []
+	winning_ticket2.each do |winning|
+		# p winning
+
+		if array_1_number_off(winning,losing_ticket2) == true 
+			array.push(winning)
+		end
+
+
+
 	end
- end
 
- def array_3_strings(winning_ticket2,losing_ticket2)
+array
 
-  		winning_ticket2.each do |winning|
 
-  		num = []
-  		counter = 0
+end
+
+
+
+
+
+
+
+
+
+
+ # def array_3_strings(winning_ticket2,losing_ticket2)
+
+ #  		winning_ticket2.each do |winning|
+
+ #  		num = []
+ #  		counter = 0
  		
- 		if losing_ticket2[0]==winning[0]
- 			counter +=1	
-		end
+ # 		if losing_ticket2[0]==winning[0]
+ # 			counter +=1	
+	# 	end
 		
-		if losing_ticket2[1]==winning[1]
-			counter +=1
-		end
+	# 	if losing_ticket2[1]==winning[1]
+	# 		counter +=1
+	# 	end
 		
-		if losing_ticket2[2]==winning[2]	
-			counter +=1 
-		end
+	# 	if losing_ticket2[2]==winning[2]	
+	# 		counter +=1 
+	# 	end
 		
- 		if losing_ticket2[3]==winning[3]				
-			counter +=1		
-		end
+ # 		if losing_ticket2[3]==winning[3]				
+	# 		counter +=1		
+	# 	end
 
-		if counter == 3
-			true
-		end
- 	end
- end
+	# 	if counter == 3
+	# 		true
+	# 	end
+ # 	end
+ # end
 
 
 
